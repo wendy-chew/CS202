@@ -1,0 +1,19 @@
+/* 
+Style Sheet for CS202
+* version: 2.0
+* last modified: 6.29.2020
+* author: Wendy Chew Ven Si
+* email: cheww@wwu.edu
+* website: lesson 3
+*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js);
+// css variables
+:root{
+    --main-color:
+}
+// style rule
+body{
+    background-color: #fffef0 !important;
+}

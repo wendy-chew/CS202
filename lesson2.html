@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 | HTML Web Form & CSS </title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-">
+    
+    <i class="fas fa-copyright"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+
+    <!-- Container & container-fluid -->
+    <!-- background-color -bg -->
+    <!-- contextual colors -primary, success, dark, secondary, danger, warning, light, muted -->
+    <div class="container">
+
+        <h1 class="text-center m-3">HTML Web Forms</h1>
+        <!-- form attributes -action, method(post,get) -->
+        <!-- text, email, password, textarea, select, checkbox, radio button, submit -->
+        <form action="submit.php" method="POST" autocomplete name="" id="" >
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password">
+            </div>
+            <div class="form-check">
+                <label for="gender" class="form-check-label">Agree to the terms and conditions</label>
+                <input type="radio"class="form-check-input"name="gender" id="gender">
+            </div>
+            <div class="form-check form-switch">
+                <label for="change" class="form-label">Switch</label>
+                <input type="radio" class="form-check-input" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="select" class="form-label">City</label>
+                <select name="" id="" class="form-select">
+                    <option value="1">Seattle</option>
+                    <option value="2">Bellingham</option>
+                    <option value="3">Tacoma</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" class="btn btn-success" value="Submit">
+        </form>
+
+
+
+
+
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
