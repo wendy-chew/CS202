@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4 | CSS &amp; Page Layout</title>
+    <title>Lesson 7 | CSS3 - Gradient, Animations & Transitions</title>
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="css/main2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main5.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-grid">
+            <div class="logo">LOGO</div>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -21,9 +23,19 @@
             </nav>
         </div>
     </header><!-- header -->
-    <div class="banner"></div>
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-text-items">
+                <h2>Bellingham High School</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cumque voluptatum quos rerum,
+                    quisquam iste?
+                </p>
+            </div>
+        </div><!-- banner-text -->
+    </div><!-- banner -->
     <main class="padding">
-        <div class="container">
+        <div class="container main-grid">
             <div class="sideleft">
                 <h3>Welcome To My Website</h3>
                 <p>
@@ -79,8 +91,8 @@
         </div><!-- container -->
 
     </main><!-- main -->
-    <section class="bg-color">
-        <div class="container">
+    <section class="margin bg-color position">
+        <div class="container padding section-grid">
             <div class="box">
                 <i class="fas fa-book"></i>
                 <h4>Knowledge is power</h4>
@@ -103,20 +115,23 @@
                 </p>
             </div><!-- box -->
         </div><!-- container -->
+        <!-- animation -->
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+        <div class="bubble b6"></div>
+        <div class="bubble b7"></div>
+        
+        <!-- anbimation ends -->
     </section><!-- section -->
     <div class="clearfix"></div>
-    <footer class="padding">
-        <div class="container">
+    <footer>
+        <div class="container padding">
             <i class="far fa-copyright"></i>
 
             Copyright Your Email. All Rights Reserve.
-            <div class="social">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-
-            </div>
         </div><!-- container -->
     </footer><!-- footer -->
 </body>

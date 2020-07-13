@@ -4,26 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4 | CSS &amp; Page Layout</title>
+    <title>Lesson 8 | Navigation & RWD</title>
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="css/main2.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/main6.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
+        <div class="container header-grid">
+            <div class="logo">LOGO</div>
+            <!-- <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
+            </nav> -->
+            <nav>
+                <!-- hamburger -->
+                <label for="toggle" class="label">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" name="toggle" id="toggle">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a>
+                        <!-- dropdown -->
+                        <ul>
+                            <li><a href="#">Members</a></li>
+                            <li><a href="#">Executive</a></li>
+                            <li><a href="#">CEO</a></li>
+                            <li><a href="#">President</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Portfolio</a>
+                        <!-- dropdown -->
+                        <ul>
+                            <li><a href="#">Javascript</a></li>
+                            <li><a href="#">PHP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header><!-- header -->
-    <div class="banner"></div>
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-text-items">
+                <h2>Bellingham High School</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cumque voluptatum quos rerum,
+                    quisquam iste?
+                </p>
+            </div>
+        </div><!-- banner-text -->
+    </div><!-- banner -->
     <main class="padding">
-        <div class="container">
+        <div class="container main-grid">
             <div class="sideleft">
                 <h3>Welcome To My Website</h3>
                 <p>
@@ -79,8 +120,8 @@
         </div><!-- container -->
 
     </main><!-- main -->
-    <section class="bg-color">
-        <div class="container">
+    <section class="padding bg-color position">
+        <div class="container padding section-grid">
             <div class="box">
                 <i class="fas fa-book"></i>
                 <h4>Knowledge is power</h4>
@@ -104,19 +145,57 @@
             </div><!-- box -->
         </div><!-- container -->
     </section><!-- section -->
-    <div class="clearfix"></div>
-    <footer class="padding">
-        <div class="container">
+    <!-- features -->
+    <div class="container padding">
+        <div class="features">
+            <div class="features-content">
+                <h2>Core Features</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel earum odio rem similique!
+                    Cumque, earum dolorum! Corrupti, repellat est.
+                </p>
+                <div class="features-items">
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><!-- feature -->
+                </div><!-- feature items -->
+            </div><!-- feature-content -->
+        </div><!-- end of features -->
+    </div><!-- end of container -->
+    <!-- features end -->
+
+    <footer>
+        <div class="container padding">
             <i class="far fa-copyright"></i>
 
             Copyright Your Email. All Rights Reserve.
-            <div class="social">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-
-            </div>
         </div><!-- container -->
     </footer><!-- footer -->
 </body>

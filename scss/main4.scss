@@ -1,0 +1,120 @@
+/*
+Style Sheet for Justice Banson
+* version: 4.2
+* last modified: 7.8.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 6.
+ */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+//variables
+
+$color-1: #22bbd4;
+$color-2: #2c6e78;
+$text-color: #fff;
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito';
+}
+.box {
+    font-weight: bold;
+    padding: 0.8em;
+    color: #fff;
+    border: 1px solid $text-color;
+}
+.color-1 {
+    background: $color-1;
+}
+.color-2 {
+    background: $color-2;
+}
+//grid
+.grid{
+    display: grid;
+    // grid template 
+    // grid-template-columns: 200px 300px 200px;
+
+    // percentage 
+    // grid-template-columns: 30% 40% 30%;
+
+    // fractional units (better than percentage)
+    // grid-template-columns: 1fr 2fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+
+    // repeat(times,unit)
+    grid-template-columns: repeat(3,1fr);
+    
+    
+    // grid-template-rows: 150px;
+    // auto-rows
+    // grid-auto-rows:180px ;
+
+    // grid-template-columns: 1fr 200px 1fr;
+    // minmax(min unit, max unit)
+    // grid-template-columns: 1fr minmax(100px,200px) 1fr;
+    // grid-template-columns: 1fr minmax(100px,1fr) 1fr;
+
+    // repeat and minmax()
+    // grid-template-columns: repeat(3,minmax(100px,1fr));
+    
+    // auto-fill or auto-fit
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    // auto
+    grid-auto-rows: minmax(180px, auto);
+}
+// line-placement// grid-columns
+.header{
+    // grid-column-start: 1 ;
+    // grid-column-end: 3 ;
+    // grid-column:1/3; 
+
+    // row span
+    // grid-row-start: 1;
+    // grid-row-end: 3 ;
+    // grid-row :1/2;
+}
+.nav{
+    // grid-row: 1/3;
+    // grid-column: 3/4;
+}
+.footer{
+    // grid-column: 2/4;
+}
+
+// grid-template-areas
+.grid{
+    grid-template-areas:
+    "header header header"
+    "nav main main"
+    "nav main main"
+    "aside aside section"
+    "aside aside section"
+    "footer footer footer";
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.aside{
+    grid-area: aside;
+}
+.section{
+    grid-area: section;
+}
+.footer{
+    grid-area:footer;
+}

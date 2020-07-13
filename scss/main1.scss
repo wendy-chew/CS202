@@ -8,7 +8,7 @@ Style Sheet for CS202
 */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
 // Style rule
 
 /* selector{declaration;} */
@@ -20,7 +20,7 @@ Style Sheet for CS202
 }
 
 //scss variables
-$primary: yellow;
+$primary: red;
 $margin: 22px;
 
 body{

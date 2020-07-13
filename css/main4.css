@@ -1,19 +1,19 @@
 @charset "UTF-8";
-/* 
-Style Sheet for CS202
-* version: 2.0
-* last modified: 6.29.2020
-* author: Wendy Chew Ven Si
-* email: cheww@wwu.edu
-* website: lesson 3
-*/
+/*
+Style Sheet for Justice Banson
+* version: 4.2
+* last modified: 7.8.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 6.
+ */
 /*!
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10140,30 +10140,79 @@ button.close {
     display: inline-flex !important;
   }
 }
-/* selector{declaration;} */
-/* selector{property:value;} */
-:root {
-  --main-color: #05a081;
+/*!
+ * Font Awesome Free 5.13.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+/* google font */
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #fffef0 !important;
+  font-family: "Nunito";
 }
 
-h2, .h2 {
-  color: var(--main-color);
+.box {
+  font-weight: bold;
+  padding: 0.8em;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-h3, .h3 {
-  color: red;
-  font-size: 15px;
+.color-1 {
+  background: #22bbd4;
 }
 
-nav {
-  color: red;
-}
-nav a {
-  text-decoration: none;
+.color-2 {
+  background: #2c6e78;
 }
 
-/*# sourceMappingURL=main1.css.map */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(180px, auto);
+}
+
+.grid {
+  grid-template-areas: "header header header" "nav main main" "nav main main" "aside aside section" "aside aside section" "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=main4.css.map */

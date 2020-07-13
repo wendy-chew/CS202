@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4 | CSS &amp; Page Layout</title>
+    <title>Lesson 5 | CSS3 Flex</title>
+    <link rel="stylesheet" href="css/main3.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="css/main2.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-flex">
+            <!-- logo -->
+            <div class="logo">LOGO</div>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -21,9 +23,19 @@
             </nav>
         </div>
     </header><!-- header -->
-    <div class="banner"></div>
-    <main class="padding">
-        <div class="container">
+    <!-- banner image -->
+    <div class="banner">
+        <div class="banner-text">
+            <div class="container banner-text-item">
+                <h2>Bellingham High School</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero hic eaque nobis atque praesentium excepturi.
+                </p>
+            </div>
+        </div>
+    </div>
+    <main class="padding"> <!-- create padding -->
+        <div class="container main-flex">
             <div class="sideleft">
                 <h3>Welcome To My Website</h3>
                 <p>
@@ -79,8 +91,8 @@
         </div><!-- container -->
 
     </main><!-- main -->
-    <section class="bg-color">
-        <div class="container">
+    <section class="margin bg-color">
+        <div class="container section-flex">
             <div class="box">
                 <i class="fas fa-book"></i>
                 <h4>Knowledge is power</h4>
@@ -105,18 +117,11 @@
         </div><!-- container -->
     </section><!-- section -->
     <div class="clearfix"></div>
-    <footer class="padding">
+    <footer>
         <div class="container">
             <i class="far fa-copyright"></i>
 
             Copyright Your Email. All Rights Reserve.
-            <div class="social">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-
-            </div>
         </div><!-- container -->
     </footer><!-- footer -->
 </body>

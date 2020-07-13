@@ -1,19 +1,12 @@
 @charset "UTF-8";
-/* 
-Style Sheet for CS202
-* version: 2.0
-* last modified: 6.29.2020
-* author: Wendy Chew Ven Si
-* email: cheww@wwu.edu
-* website: lesson 3
-*/
 /*!
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10140,30 +10133,37 @@ button.close {
     display: inline-flex !important;
   }
 }
-/* selector{declaration;} */
-/* selector{property:value;} */
-:root {
-  --main-color: #05a081;
+.box {
+  width: 180px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 15px;
+  float: left;
 }
 
-body {
-  background-color: #fffef0 !important;
+.box1 {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 15px;
+  background-color: #f0f0f0;
 }
 
-h2, .h2 {
-  color: var(--main-color);
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  align-items: center;
 }
 
-h3, .h3 {
-  color: red;
-  font-size: 15px;
+.four {
+  flex: 1;
 }
 
-nav {
-  color: red;
-}
-nav a {
-  text-decoration: none;
+.five {
+  flex: 30%;
 }
 
-/*# sourceMappingURL=main1.css.map */
+/*# sourceMappingURL=main3a.css.map */

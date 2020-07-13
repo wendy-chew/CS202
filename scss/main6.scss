@@ -1,0 +1,277 @@
+/*
+Style Sheet for CS202
+* version: 4.0
+* last modified: 7.1.2020
+* author: Justice Banson
+* email: justice@justicebanson.com
+* website: lesson 4
+*/
+/* 
+Contents:
+1. Variables
+2. Body
+2. Header
+3. banner
+4. Navigation
+5. Main
+6. Footer
+*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+//variables
+$main-color: #05a081;
+$text-color: #fff;
+$bg-color: #eee;
+$bg-color-2: #333;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // font-family: 'Nunito', sans-serif;
+    // font-size: 18px;
+    font: {
+        family: "Nunito", sans-serif;
+        size: 18px;
+    }
+}
+
+header {
+    width: 100%;
+    position: absolute; /* absolute */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: -2px -7px 10px 2px rgba(0, 0, 0, 0.35);
+    background: transparent;
+    z-index: 10;
+}
+
+.header-grid {
+    display: grid;
+    grid-auto-flow: column;
+}
+.logo {
+    color: $text-color;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.banner {
+    background: {
+        image: url(../images/background.jpg);
+        size: cover;
+        position: center;
+    }
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+// banner grid
+.banner-text {
+    display: grid;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.banner-text-items {
+    color: $text-color;
+    z-index: 2;
+}
+// before
+.banner-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+// navigation
+// nav {
+//     text-align: center;
+//     display: grid;
+//     grid-template-columns: repeat(5, 1fr);
+//     justify-content: space-around;
+//     a {
+//         text-decoration: none;
+//         color: $text-color;
+//         // display: inline-block;
+//         padding: 1em 2em;
+//     }
+// }
+// navigation2 
+nav{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        // flex
+        // display: flex;
+        // grid
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-content: space-around;
+        text-align: center;
+        li{
+            // flex: 1;
+            position: relative;
+            a{
+                display: block;
+                padding: 1.4rem 2rem;
+                color: $text-color;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $text-color;
+            }
+            ul{
+                position: absolute;
+                width: 100%;
+                grid-template-columns: 1fr;
+                background-color: $text-color;
+                // hide the content
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+                a{
+                    color: $bg-color-2;
+                    display: block;
+                    padding: 1rem 0;
+                }
+                a:hover{
+                    color: $bg-color-2;
+                }
+            }
+        }
+    }
+}
+// dropdown
+nav ul li:hover ul{
+    max-height: 300px;
+}
+// custom css
+.padding {
+    padding: 4rem 0;
+}
+.bg-color {
+    // background-color: $bg-color-2;
+    background: linear-gradient(to right, #134e5e, #333);
+    overflow: hidden;
+}
+
+main {
+    background-color: $bg-color;
+}
+// main-grid
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4rem;
+}
+
+.btn {
+    background: $main-color;
+    padding: 0.6em 2em;
+    color: $text-color;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    padding: 2em;
+    text-align: center;
+    color: $text-color;
+}
+.box .fas {
+    font-size: 2em;
+}
+footer {
+    width: 100%;
+    text-align: center;
+}
+// social media
+.social {
+    width: 50px;
+    position: fixed;
+    top: 65%;
+    left: 1%;
+}
+.social i {
+    display: block;
+    width: 40px;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 2px;
+}
+/* features */
+
+.features {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.features-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.feature .fas {
+    font-size: 60px;
+    color: $main-color;
+}
+
+.feature h4 {
+    margin: 1rem 0;
+}
+// media queries
+.fa-bars{
+    font-size: 1.6rem;
+    color: $text-color;
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+    width: 2rem;
+    cursor: pointer;
+}
+.label, #toggle{
+    display: none;
+}
+// @media and only(), @media all(), @media()
+@media(max-width:780px){
+    nav{
+        ul{
+            grid-template-columns: 1fr;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            // display: none; or
+            max-height: 0;
+            overflow: hidden;
+        }
+    }
+    .label{
+        display: block;
+    }
+    
+    #toggle:checked+ul{
+        max-height: 500px;
+        transition: 0.3s;
+    }
+    .main-grid, .section-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+}
