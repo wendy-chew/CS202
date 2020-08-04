@@ -1,0 +1,93 @@
+/*
+Style Sheet for Justice Banson
+* version: 15.0
+* last modified: 7.29.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 15.
+ */
+
+/* 
+ Contents:
+ 1. Body
+ 2. Header
+ 3. Navigation
+ 4. Wrapper
+ 5. Main
+ 6. Footer
+ */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+//variables
+    $main-color:darkcyan;
+    $dark-color:#151515;
+    $margin-page:10px;
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+}
+header{
+    background: $dark-color;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0;  
+}
+nav li{
+    flex: 1;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+a:hover{
+    text-decoration: none !important;
+    color:$main-color !important;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.head .box{
+    margin:$margin-page;
+}
+.box h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.add{
+    background-color: #ccc;
+    padding:15px;
+    color:#888;
+    font-family: 'Dancing Script', cursive;
+}
+#list{
+    background-color:#ccc;
+    width:350px;
+    margin:$margin-page;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: $main-color;
+    position: relative;
+    display:inline-flex;
+    margin:$margin-page;
+    border-radius: 50%;
+}

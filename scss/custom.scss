@@ -1,0 +1,56 @@
+/*
+Style Sheet for Justice Banson
+* version: 9.0
+* last modified: 10.31.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 9.
+ */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+//variables
+
+$color-1: #22bbd4;
+$color-2: #2c6e78;
+$color-3: dodgerblue;
+$color-4: darkcyan;
+$text-color: #fff;
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.box{
+    border-radius: 3px;
+    border:1px solid $text-color;
+    color: $text-color;
+    font-size: 120%;
+    background-color: $color-1;
+    padding: 2em;
+}
+.box1{
+    border-radius: 3px;
+    border:1px solid $text-color;
+    color: $text-color;
+    font-size: 120%;
+    background-color: $color-2;
+    padding: 2em;
+}
+.box2{
+    border-radius: 3px;
+    border:1px solid $text-color;
+    color: $text-color;
+    font-size: 120%;
+    background-color: $color-3;
+    padding: 2em;
+}
+.box3{
+    border-radius: 3px;
+    border:1px solid $text-color;
+    color: $text-color;
+    font-size: 120%;
+    background-color: $color-4;
+    padding: 2em;
+}

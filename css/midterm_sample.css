@@ -1,0 +1,109 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway;
+  font-size: 18px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(90px, 1fr));
+  justify-content: space-between;
+  grid-gap: 10px;
+}
+
+.menu a {
+  flex: 3;
+  display: block;
+  box-shadow: 0 1px 4px rgba(80, 80, 80, 0.8);
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: #fff;
+  background: #05a081;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.banner-text {
+  display: grid;
+  height: 100%;
+  width: 70%;
+  align-items: center;
+  text-align: left;
+  margin: auto;
+}
+
+.banner-text-items {
+  color: #fff;
+}
+
+.main-grid {
+  box-shadow: 0 1px 4px rgba(80, 80, 80, 0.8);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main-grid p {
+  font-size: 13px;
+}
+
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+  grid-gap: 10px;
+}
+
+.section-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bg-color {
+  background-color: #333;
+}
+
+.box {
+  padding: 2em;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.box .fas {
+  font-size: 2em;
+  margin: 1rem;
+}
+
+footer {
+  margin: 25px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=midterm_sample.css.map */

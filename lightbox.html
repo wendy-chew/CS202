@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/baguettebox.js/dist/baguetteBox.css">
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-gap: 20px;
+        }
+        .card img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1 class="display-3 text-center font-weight-bold">Gallery</h1>
+        <div class="container gallery">
+            <div class="card">
+                <a href="images/3.jpg">
+                    <img src="images/3.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="images/2.jpg">
+                    <img src="images/2.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="images/5.jpg">
+                    <img src="images/5.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="images/4.jpg">
+                    <img src="images/4.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="images/6.jpg">
+                    <img src="images/6.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="images/7.jpg">
+                    <img src="images/7.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/baguettebox.js/dist/baguetteBox.js"></script>
+    <script>
+        $('document').ready(function(){
+            baguetteBox.run('.gallery');
+        });
+    </script>
+    
+</body>
+</html>

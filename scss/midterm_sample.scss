@@ -1,0 +1,120 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+// variables
+$main-color:#05a081;
+$light:#fff;
+$bg-1:#eee;
+$bg-2:#333;
+$shadow:0 1px 4px rgba(80,80,80,0.8);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font: {
+        family: Raleway;
+        size: 18px;
+    }
+}
+//grid
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(90px,1fr));
+    justify-content: space-between;
+    grid-gap:10px;
+}
+
+//flex
+// .menu ul{
+    // display:flex;
+    // flex-direction: row;
+    // list-style-type: none;
+    // padding: 0;
+    // margin: 0;
+    // text-align: center;
+    // justify-content: space-between;
+// }
+
+.menu a{
+    flex:3;
+    display: block;
+    box-shadow: $shadow;
+    text-decoration: none;
+    color: $bg-2;
+    padding: 0.5rem 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu a:hover{
+    opacity: 1;
+    color: $light;
+    background:$main-color;
+    font-weight: bold;
+}
+.banner{
+    background: {
+        image: url(../images/banner.jpg);
+        size: cover;
+        position: center;
+    };
+    position: relative;
+    margin-bottom: 10px;
+}
+// banner grid
+.banner-text{
+    display: grid;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+}
+.banner-text-items{
+    color: $light;
+}
+.main-grid{
+    box-shadow:$shadow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.main-grid p{
+    font-size: 13px;
+}
+.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-around;
+    grid-gap:10px;
+}
+.section-grid{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bg-color{
+    background-color: $bg-2;
+}
+.box{
+    // width: 30%;
+    // float: left;
+    padding: 2em;
+    text-align: center;
+    color: $light;
+    font-size: 13px;
+}
+.box .fas{
+    font-size: 2em;
+    margin:1rem;
+}
+footer{
+    margin: 25px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}

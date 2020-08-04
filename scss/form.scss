@@ -1,0 +1,95 @@
+/*
+Style Sheet for Justice Banson
+* version: 2.2
+* last modified: 7.1.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 4.
+ */
+
+/* 
+ Contents:
+ 1. Body
+ 2. Header
+ 3. Navigation
+ 4. Wrapper
+ 5. Main
+ 6. Footer
+ */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
+//variables
+$main-color: #32c8be;
+$border-radius: 1.6em;
+$bg-color: #fff;
+$text-color: rgb(211, 208, 208);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+form {
+    position: relative;
+    max-width: 350px;
+    background: $bg-color;
+    padding: 3rem;
+    border-radius: 6px;
+    color: $text-color;
+    text-align: center;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), -5px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 16px auto;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $main-color;
+    border-radius: $border-radius;
+    border: none;
+    outline: none;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1), inset 4px 4px 10px rgba(0, 0, 0, 0.1),
+        inset -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    color: $bg-color;
+    border-radius: $border-radius;
+    background-color: $main-color;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 1), 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:active {
+    font-weight: bold;
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 1), inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: $main-color;
+}
+
+.feedback {
+    color: $main-color;
+    font-weight: bold;
+}

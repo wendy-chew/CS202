@@ -1,0 +1,6 @@
+//common string methods
+
+
+
+
+
